@@ -33,7 +33,7 @@ public class ConsumeRestapiIntegTests {
 		
 		todoList = this.restTemplateobj.getForObject("http://localhost:8080/getDetails",List.class);
 	
-		//here you can specify your integeration  env url
+		//here you can specify your integ env url
 		Assertions.assertNotNull(todoList);
 		Assertions.assertFalse(todoList.isEmpty());
 		Assertions.assertNotNull(todoList.get(0));
